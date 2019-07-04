@@ -1,0 +1,588 @@
+
+h1 { font-size:140%; font-style:bold; }
+h2 { font-size:130%; font-style:bold; }
+h3 { font-size:115%; font-style:bold; margin-left:30px; }
+
+A { text-decoration:none; color:#0000FF; }     /* unvisited link */
+A:link { text-decoration:none; color:#0000FF; }     /* unvisited link */
+A:visited { text-decoration:none; color:#0000FF; }  /* visited link */
+A:hover { text-decoration:underline; color:#0000B0; }   /* mouse over link */
+A:active { text-decoration:underline; color:#F000B0; }   /* selected link */
+
+UL { margin-left:1px; }
+
+/*
+                   IMPORTANT!
+
+In order for the EE7 Setup utility to function properly,
+some lines include multiple values stored as comments. E.g:
+
+   TEXT.SIZE=[8,9,10,11,12]
+
+When the user chooses, for example, Text Size = MEDIUM,
+the setup utility will apply the middle number to the
+variable on the left of the same line.
+
+Changing these values will affect the result of applying
+different Text Sizes, and removing them will disable that
+feature.
+
+If you add or change these lines, there must be NO SPACES
+between the keywords (e.g. TEXTSIZE) and the equal sign
+and the square brackets, and between the numeric values.
+
+The number of numeric values inside the square brackets
+must be exactly the same as you find (in this case, 5)
+otherwise the changes will not be applied.
+
+*/
+
+BODY
+  {
+  font-family:Tahoma, "Arial Unicode MS", Gentium; /* FONT.ROMAN=[Tahoma, "Arial Unicode MS, Gentium"] */
+  font-size:10pt;      /* TEXT.SIZE=[8,9,10,11,12] */
+  font-color:black;
+  line-height:13pt;    /* TEXT.SIZE=[11,12,13,14,15] */
+  }
+
+TD
+  {
+  font-family:Tahoma, "Arial Unicode MS", Gentium;  /* FONT.ROMAN */
+  font-size:10pt;      /* TEXT.SIZE=[8,9,10,11,12] */
+  font-color:black;
+  line-height:13pt;    /* TEXT.SIZE=[11,12,13,14,15] */
+  }
+
+BODY.controlbar
+  {
+  margin-top:2px;
+  margin-left:10px;
+  font-size:8pt;
+  }
+
+BODY.navbar
+  {
+  font-size:9pt;
+  margin-top:2px;
+  margin-left:10px;
+  }
+
+.Bengali
+{
+  font-family:Rupali, "Arial Unicode MS"; /* FONT.INDIC=[Rupali, "Arial Unicode MS"] */
+  font-size:14pt;      /* TEXT.SIZE=[10,12,14,16,18] */
+}
+
+.Help {
+  position: absolute;
+  posTop: 0;
+  posLeft: 0;
+  border-width: thin;
+  border-style: solid;
+  background-color: yellow;
+  color: black;
+  height=20;
+  width=240;
+  }
+
+P       /* Standard paragraph */
+  {
+  margin-top:6px;
+  margin-bottom:4px;
+  }
+
+.Home_Copyright
+  {
+  margin-top:1px;
+  margin-bottom:1px;
+  color:gray;
+  font-size:10px;
+  line-height:10pt;
+  text-align:center;
+  }
+
+.Home_Publisher
+  {
+  font-size:12pt;
+  font-weight:bold;
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;
+  }
+
+.Home_Title
+  {
+  font-size:16pt;
+  font-weight:bold;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:10px;
+  }
+
+.Home_Photo
+  {
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;
+  }
+
+.Home_Links_Title
+  {
+  font-size:10pt;
+  font-weight:bold;
+  line-height:13pt;
+  }
+
+.Home_Links_Title2
+  {
+  font-size:10pt;
+  font-weight:bold;
+  line-height:17pt;
+  }
+  
+.Home_Links_SubTitle
+  {
+  font-size:8pt;
+  line-height:11pt;
+  }
+
+.Home_Version
+  {
+  font-size:80%;
+  font-color:#000030;
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:30px;
+  }
+
+.discourses_heading
+  {
+  color:black;
+  font-size:110%;
+  font-weight:bold;
+  }
+
+.disc_date_place
+  {
+  color:#404040;
+  font-size:85%;
+  font-weight:normal;
+  }
+
+.list_discourse_title
+  {
+  margin-top:20px;
+  margin-bottom:1px;
+  font-size:110%;
+  font-weight:bold;
+  line-height:110%;
+  }
+
+.list_discourse_info
+  {
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:90%;
+  }
+
+.list_discourse_references
+  {
+  margin-left:30px;
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:85%;
+  line-height:120%;
+  }
+
+
+.list_AZ_list
+  {
+  margin-top:30px;
+  margin-bottom:30px;
+  font-weight:bold;
+  font-size:130%;
+  }
+
+.list_AZ_position
+  {
+  margin-left:+5px;
+  margin-right:+5px;
+  }
+
+.list_YY_list
+  {
+  margin-top:30px;
+  margin-bottom:30px;
+  font-weight:bold;
+  font-size:90%;
+  }
+
+.list_YY_position
+  {
+  margin-left:+5px;
+  margin-right:+5px;
+  }
+
+P.Disc_List_Item
+  {
+  font-weight:bold;
+  }
+
+.Copyright
+  {
+  margin-top:30px;
+  margin-bottom:15px;
+  color:gray;
+  font-size:10px;
+  line-height:10pt;
+  text-align:center;
+  }
+
+.discourse_box
+  {
+  font-size:8pt;
+  }
+
+.discourse_box_title_ref
+  {
+  font-weight:bold;
+  }
+
+.discourse_box_references
+  {
+  margin-top:25px;
+  }
+
+.discourse_box_notes
+  {
+  margin-top:25px;
+  }
+
+.para_notes
+  {
+  margin-top:5px;
+  }
+
+.Discourse_Title
+  {
+  font-size:125%;
+  font-weight:bold;
+  margin-top:25px;
+  margin-bottom:25px;
+  }
+
+.Discourse_Info
+  {
+  font-style:italic;
+  color:#404040;
+  margin-top:25px;
+  margin-bottom:25px;
+  }
+
+.Discourse_References
+  {
+  margin-top:15px;
+  margin-bottom:15px;
+  }
+
+.Discourse_Filename
+  {
+  margin-top:15px;
+  margin-bottom:15px;
+  }
+
+
+/*  Books  */
+
+.book_body
+{
+}
+
+.book_contents_chapter_number
+  {
+  font-size:90%;
+  margin-top:10px;
+  margin-bottom:10px;
+  color:gray;
+  }
+
+.book_contents_chapter_title
+  {
+  font-size:90%;
+  margin-top:10px;
+  margin-bottom:10px;
+  }
+
+.book_toc
+  {
+  margin-left:30px;
+  margin-top:10px;
+  margin-bottom:10px;
+  }
+
+.book_title
+  {
+  font-size:130%;
+  text-align:center;
+  font-weight:bold;
+  margin-top:25px;
+  margin-bottom:25px;
+  }
+
+.book_chapter_title
+  {
+  font-size:120%;
+  font-weight:bold;
+  margin-top:25px;
+  margin-bottom:25px;
+  }
+
+.book_chapter_references
+  {
+  margin-left:30px;
+  margin-top:25px;
+  margin-bottom:25px;
+  }
+
+.book_chapter_topline
+  {
+  border: none 0;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: center;
+  margin-top:30px;
+  margin-bottom:18px;
+  color:red;
+  background-color:silver;
+  width=100%;
+  }
+
+.book_chapter_header_booktitle
+  {
+  font-size:8pt;
+  font-color:gray;
+  color:gray;
+  }
+
+.book_chapter_header_chapternumber
+  {
+  font-size:8pt;
+  font-color:gray;
+  color:gray;
+  margin-right:12px;
+  }
+
+.book_chapter_img_goto
+  {
+  margin-left:4px;
+  vertical-align:middle;
+  margin-right:4px;
+  }
+
+
+/* navbar */
+
+.navbar_title
+  {
+  font-size:90%;
+  font-weight:bold;
+  }
+
+.navbar_alpha_title
+  {
+  margin-top:5px;
+  margin-bottom:1px;
+  }
+
+.navbar_alpha_AZ
+  {
+  font-family:Courier, Fixed;
+  margin-left:10px;
+  margin-top:1px;
+  margin-bottom:10px;
+  line-height:110%;
+  }
+
+.navbar_words
+{
+  font-family:Courier, Fixed;
+  margin-left:10px;
+  margin-top:2px;
+  margin-bottom:2px;
+  line-height:110%;
+}
+
+.navbar_help_items
+{
+font-size:90%;
+}
+
+P.Para_Indent
+  {
+  text-indent:30px;
+  }
+
+P.Para_Major_Heading
+  {
+  text-align:center;
+  font-weight:bold;
+  margin-top:20px;
+  margin-bottom:10px;
+  }
+
+P.Para_Minor_Heading
+  {
+  margin-top:20px;
+  font-weight:bold;
+  margin-bottom:10px;
+  }
+
+P.Para_Quote
+  {
+  margin-left:30px;
+  }
+
+P.Para_Translation_Eds
+  {
+  margin-left:30px;
+  }
+
+P.Para_Translation_Author
+  {
+/*  text-indent:30px; */
+  margin-left:30px;
+  }
+
+P.Para_Citation
+  {
+  text-indent:100px;
+  font-size:90%;
+  font-color:#404040;
+  line-height:12pt;
+  margin-top:0px;
+  margin-bottom:15px;
+  }
+
+P.Para_Footnote
+  {
+  font-color:gray;
+  }
+
+P.Footnotes_Line
+  {
+  margin-top:30px;
+  margin-bottom:10px;
+  }
+
+P.Footnotes_Title
+  {
+  margin-top:10px;
+  margin-bottom:10px;
+  font-size:90%;
+  }
+
+P.Para_Copyright
+  {
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:20px;
+  }
+
+P.Para_Sloka
+  {
+  margin-left:30px;
+  font-style:italic;
+  letter-spacing: +0.20px;
+  margin-top:12px;
+  margin-bottom:15px;
+  }
+
+P.Para_Poem
+  {
+  margin-left:30px;
+  margin-top:12px;
+  margin-bottom:15px;
+  }
+
+.books_book_title_titles
+{
+font-weight:bold;
+}
+
+.all_books_toc
+  {
+  font-weight:bold;
+  }
+
+.alltoc_book_title
+  {
+  font-weight:bold;
+  margin-top:20px;
+  margin-bottom:2px;
+  }
+
+.alltoc_book_chapters
+  {
+  margin-left:30px;
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:185%;
+  line-height:100%;
+  }
+
+.books_book_title_titles
+{
+margin-top:2px;
+margin-bottom:2px;
+}
+
+.books_book_title_tocs
+{
+margin-top:20px;
+margin-bottom:2px;
+font-weight:bold;
+}
+
+.books_book_chapters
+{
+  margin-left:30px;
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:85%;
+  line-height:100%;
+}
+
+.index_ref_word
+  {
+  font-size:120%;
+  font-weight:bold;
+  margin-top:12px;
+  margin-bottom:15px;
+  }
+
+.index_ref_title
+  {
+  font-weight:bold;
+  margin-top:12px;
+  margin-bottom:15px;
+  }
+
+.index_similar_words
+  {
+  margin-left: 50px;
+  margin-top:15px;
+  margin-bottom:15px;
+  }
+
+.index_block_title
+  {
+  font-size:120%;
+  font-weight:bold;
+  margin-top:12px;
+  margin-bottom:15px;
+  }
+
+/* Highlight the matching word in yellow */
+SPAN.HL { background-color:#ffff70; font-style:bold; }
+SPAN.HLx {color:#FFFFFF; background-color:#0000DA; font-style=normal; }
+
